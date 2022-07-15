@@ -7,7 +7,7 @@ var server = {
 	using: 'Codeanywhere',
 	URL: {
 		Codeanywhere: 'https://drifty-abakasam720639.codeanyapp.com/',
-		Heroku: ''
+		Heroku: 'https://drifty-database.herokuapp.com/'
 	},
 	redirect: {
 		LOGIN: 'council.html',
@@ -52,13 +52,6 @@ server.web = web.createServer(function (request, response) {
 			})
 			
 			console.log('New Order! Phone: ' + server.URL.parameters.phone + ' Item: ' + server.URL.parameters.item + ' Location: ' + server.URL.parameters.location + ' Time: ' + server.URL.parameters.time)
-			//mail.send({
-			//	text:    'New Order! Phone: ' + server.URL.parameters.phone + ' Item: ' + server.URL.parameters.item + ' Location: ' + server.URL.parameters.location + ' Time: ' + server.URL.parameters.time,
-			//	from:    'abakasam@zohomail.com', 
-			//	to:      'abakasam@outlook.com',
-			//	cc:      'noreply@outlook.com',
-			//	subject: ' '
-			//}, function(error, message) { console.log(error || message) })
 		}
 
 		response.writeHead(302, { location: server.redirect.location + server.URL.query })
