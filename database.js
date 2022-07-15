@@ -1,4 +1,4 @@
-var mysql = require("./node_modules/mysql")
+var mysql = require("mysql")
 
 var configuration = {
 	host: 'us-cdbr-east-04.cleardb.com',
