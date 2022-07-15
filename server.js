@@ -4,10 +4,10 @@ var database = require('./database.js')
 var email = require('emailjs')
 
 var server = {
-	using: 'Heroku',
+	using: 'Codeanywhere',
 	URL: {
 		Codeanywhere: 'https://drifty-abakasam720639.codeanyapp.com/',
-		Heroku: 'https://drifty-database.herokuapp.com/'
+		Heroku: 'https://drifty-coachshake.herokuapp.com/'
 	},
 	redirect: {
 		LOGIN: 'council.html',
