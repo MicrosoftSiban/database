@@ -1,6 +1,6 @@
 # Database
 
-General database for Drifty templates
+General database for Drifty templates.
 
 		server.js
 		database.js
