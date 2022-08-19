@@ -71,6 +71,7 @@ General database for Drifty templates.
 		query (coachshake - examples)
 
 		open()
+		create(file)
 		call(task, records)
 		stop()
 
